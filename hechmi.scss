@@ -86,6 +86,7 @@ nav ul{
         border: none;
         cursor: pointer;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        display:none;
     }
 }
 a{
@@ -110,9 +111,10 @@ ul a:hover{
     @media all and (max-width:1000px){
         .main{
             .cv{
-                width: 20%;
-                margin-left: 20vh;
-                margin-top: 20vh;
+                font-size: 1vh;
+                width: 35%;
+                margin-left: 15vh;
+                margin-top: 5vh;
             }
         }
     }
@@ -121,14 +123,9 @@ ul a:hover{
             .it_is_me{
                 position: absolute;
                 width: 100%;
-                margin-right: 5vh;
-                padding-top: 10vh;
+                margin-right: 1vh;
+                padding-top: 2vh;
                 
-            }
-            .cv{
-                width: 53%;
-                margin-left: 20vh;
-                margin-top: 10vh;
             }
         }
     }
@@ -149,8 +146,8 @@ ul a:hover{
                     margin-left: 0%;
                     margin-top: 2%;
                     margin-right: 0;
-                    width:15vh;
-                    font-size: 5vh;
+                    width:12vh;
+                    font-size: 4vh;
                     color: white;
                     background-color: black;
                     transform: translate(-5vh);
@@ -159,22 +156,56 @@ ul a:hover{
                     font-family: Sen, sans-serif;
                     padding-left: 0%;
                     padding-top: 25%;
-                    font-size: 3vh;
+                    font-size: 2vh;
                     transform: translate(-3vh);
                 }
                 &:nth-of-type(3){
                     font-family: Sen, sans-serif;
                     padding-left: 0%;
                     padding-top: 5vh;
-                    font-size: 2.5vh;
+                    font-size: 2vh;
                 }
                 span{
                     &:nth-of-type(1){
-                        font-size: 2.5vh;
+                        font-size: 2vh;
                     }
                     &:nth-of-type(2){
-                        font-size: 6.5vh;
+                        font-size: 5vh;
                         font-weight: bold;
+                    }
+                }
+                @media all and (max-width: 1000px){
+                    &:nth-of-type(1){
+                        margin-left: 0%;
+                        margin-top: 2%;
+                        margin-right: 0;
+                        width:10vh;
+                        font-size: 3vh;
+                        color: white;
+                        background-color: black;
+                        transform: translate(-5vh);
+                    }
+                    &:nth-of-type(2){
+                        font-family: Sen, sans-serif;
+                        padding-left: 0%;
+                        padding-top: 25%;
+                        font-size: 3vh;
+                        transform: translate(-3vh);
+                    }
+                    &:nth-of-type(3){
+                        font-family: Sen, sans-serif;
+                        padding-left: 0%;
+                        padding-top: 5vh;
+                        font-size: 2.5vh;
+                    }
+                    span{
+                        &:nth-of-type(1){
+                            font-size: 2.5vh;
+                        }
+                        &:nth-of-type(2){
+                            font-size: 6.5vh;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
