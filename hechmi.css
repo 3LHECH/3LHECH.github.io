@@ -188,7 +188,7 @@ ul a:hover {
   overflow-y: hidden;
   z-index: 1;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .container .main .my_picture {
     display: none;
   }
