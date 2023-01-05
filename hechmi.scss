@@ -51,7 +51,7 @@ nav ul{
         position:absolute;
         transform: translateY(100%);
         top:0;
-        padding-top: 4%;
+        padding-top: 20%;
         height:30%;
         left:0;
         background:rgba(255, 255, 255, 0,);
@@ -78,7 +78,7 @@ nav ul{
     .nav_items{
         position: relative;
         font-size: 14px;
-        width: 1.0vh;
+        width: 1.5vh;
         height: 2.0vh;
         padding-top:5%;
         background-color: #139ba0;
@@ -121,8 +121,9 @@ ul a:hover{
             .it_is_me{
                 position: absolute;
                 width: 100%;
-                margin-right: 10vh;
+                margin-right: 5vh;
                 padding-top: 10vh;
+                
             }
             .cv{
                 width: 53%;
