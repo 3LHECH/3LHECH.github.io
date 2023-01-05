@@ -16,6 +16,20 @@ html {
 body{
     background:white;
 }
+.cv{
+    margin-left: 80vh;
+    margin-top: 30vh;
+    text-decoration: none;
+    border: #139ba0 1px solid;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    color: black;
+}
+.cv:hover{
+    background-color:#1cd2d8 ;
+    border: rgba(0, 0, 0, 0.267) 1px solid;
+    transition: all 2s ease;
+}
 nav ul{
     z-index: 2;
     position:absolute;
@@ -31,11 +45,22 @@ nav ul{
     position: fixed;
     margin-left: 98%;
 }
-a{
-    position: relative;
-    font-size: 14px;
-    display: table;
-    padding:10px;
+@media all and (max-width: 800px){
+    nav ul{
+        z-index: 2;
+        position:absolute;
+        transform: translateY(100%);
+        top:0;
+        padding-top: 4%;
+        height:30%;
+        left:0;
+        background:rgba(255, 255, 255, 0,);
+        overflow:hidden;
+        transition:width 0.2s linear;
+        box-shadow: 0 20px 35px rgba(0,0,0,0);
+        position: fixed;
+        margin-left: 95%;
+    }
 }
 .nav_items{
     position: relative;
@@ -48,6 +73,26 @@ a{
     border: none;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+@media all and (max-width: 500px){
+    .nav_items{
+        position: relative;
+        font-size: 14px;
+        width: 1.0vh;
+        height: 2.0vh;
+        padding-top:5%;
+        background-color: #139ba0;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+a{
+    position: relative;
+    font-size: 14px;
+    display: table;
+    padding:10px;
 }
 ul li{
     margin-top: 2vh;
@@ -62,6 +107,29 @@ ul a:hover{
 .container{
     width: 100%;
     height:100%;
+    @media all and (max-width:1000px){
+        .main{
+            .cv{
+                margin-left: 40vh;
+                margin-top: 20vh;
+            }
+        }
+    }
+    @media all and (max-width: 500px){
+        .main{
+            .it_is_me{
+                position: absolute;
+                width: 100%;
+                margin-right: 10vh;
+                padding-top: 10vh;
+            }
+            .cv{
+                width: 53%;
+                margin-left: 20vh;
+                margin-top: 10vh;
+            }
+        }
+    }
     .main{
         justify-content: space-between;
         display: flex;
@@ -115,6 +183,11 @@ ul a:hover{
             overflow-y: hidden;
             z-index: 1;
         }
+        @media all and (max-width: 500px){
+            .my_picture{
+                display: none;
+            }
+        }
         .my_picture{
             position: relative;
             height: 100%;
@@ -133,6 +206,7 @@ ul a:hover{
             color:#139ba0;
         }
         /*about-me*/
+
         &:nth-of-type(2){
             background-color:rgba(0, 0, 0, 0);
             .mother{
@@ -152,11 +226,17 @@ ul a:hover{
                     border-radius: 10px;
                     margin-top: 3vh;
                     background-color: white;
+                    margin-bottom: 5vh;
                     h2{
                         text-align: center;
                         margin-top: 1vh;
                         color: #139ba0;
                         font-size: 3.5vh;
+                    }
+                    @media all and (max-width: 800px){
+                        h2{
+                            font-size: 2vh;
+                        }
                     }
                     p{
                         position: relative;
@@ -164,6 +244,11 @@ ul a:hover{
                         margin-left: 2% ;
                         margin-right: 2%;
                         font-size: 2.5vh;
+                    }
+                    @media all and (max-width: 800px){
+                        p{
+                            font-size: 1.5vh;
+                        }
                     }
                     &:nth-of-type(2){
                         margin-left: 40%;
@@ -186,11 +271,30 @@ ul a:hover{
                         font-size: 4vh;
                     }
                     p{
+                        display: inline;
                         margin-left: 2vh;
                         font-size: 3vh;
                     }
                     a{
                         font-size: 3vh;
+                        margin-left: 2vh;
+
+                    }
+                    @media all and (max-width: 800px){
+                        &:nth-of-type(1){
+                            h2{
+                                margin-left: 1vh;
+                                font-size: 2vh;
+                            }
+                            p{
+                                margin-left: 0.5vh;
+                                font-size: 1vh;
+                            }
+                            a{
+                                margin-left: 0.5vh;
+                                font-size: 1vh;
+                            }
+                        } 
                     }
                 }   
                 &:nth-of-type(2){
@@ -217,6 +321,12 @@ ul a:hover{
                             font-size: 2vh;
                             margin-left: 0vh;
                         }
+                        @media all and (max-width: 800px){
+                            p{
+                                margin-left: 0vh;
+                                font-size: 1vh;
+                            }
+                        }
                     }
                 }
                 &:nth-of-type(3){
@@ -242,6 +352,12 @@ ul a:hover{
                             margin-left: 0vh;
                             font-size: 2vh;
                         }
+                        @media all and (max-width: 800px){
+                            p{
+                                margin-left: 0vh;
+                                font-size: 1vh;
+                            }
+                        }
                     }
                 }    
             }
@@ -259,5 +375,3 @@ ul a:hover{
     filter: blur(0);
     transform: translateX(0);
 }
-
-
